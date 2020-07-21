@@ -28,22 +28,28 @@ Binary classification system reviewing lead conversion behavior.
   - Basic Neural Network
   - CatBoost
 
-### Tuning
+## Tuning
 ### [Neural Network Tuning](https://github.com/avanigupta1/week-challenge/blob/master/Neural%20Network%20Tuning.ipynb)
 Using imputed and one hot encoded data, tested out basic neural network modeling in addition to layer and experimentation. Incorproated embedding layers for text data and created combined model with specific segments for text, categorical, and numerical data. 
 
-Result: Minimal to negative improvement when testing out various iterations. 
+**Result:** Minimal to negative improvement when testing out various iterations. 
 
 ### [XGBoost](https://github.com/avanigupta1/week-challenge/blob/master/XGBoost%20Tuning.ipynb)
 Using imputed and one hot encoded data, reviewed feature importances.
 
-Result: When removing unimportant features, performance dropped.
+**Result:** When removing unimportant features, performance dropped.
 
 ### CatBoost
 #### [Missing Data](https://github.com/avanigupta1/week-challenge/blob/master/CatBoost%20-%20Missing%20Data.ipynb)
-Performed CatBoost training on dataset with missing values. Though CatBoost is known to work well with missing data, feature importances on first iteration showed a highly skewed variable to be most important, which empirically does not make sense. When removing said variable, performance dropped.
+Performed CatBoost training on dataset with missing values. Though CatBoost is known to work well with missing data, feature importances on first iteration showed a highly skewed variable to be most important, which empirically does not make sense. 
+
+**Result:** When removing highly skewed feature, performance dropped.
+
 #### [SMOTE Data](https://github.com/avanigupta1/week-challenge/blob/master/CatBoost%20-%20SMOTE%20Data.ipynb)
-Tested SMOTE oversampled dataset to see veracity of data. Though performance was incredibly high, when testing on validation set un-touched by SMOTE methods, performance deeply declined lower than that of baseline models.
+Tested SMOTE oversampled dataset to see veracity of data. 
+
+**Result:** Though performance was incredibly high, when testing on validation set un-touched by SMOTE methods, performance deeply declined lower than that of baseline models.
+
 #### [Tuning on Imputed Data Set](https://github.com/avanigupta1/week-challenge/blob/master/CatBoost%20-%20Tuning.ipynb)
 Final dataset and modeling method chosen. Tuned by using GridSearch on variety of parameters. Explored various threshold points for binary classification. 
 ##### [Tuned Model Interpreptation](https://github.com/avanigupta1/week-challenge/blob/master/Model%20Interpretation.ipynb)
