@@ -1,6 +1,8 @@
 # Week-Long Data Science Challenge
 
-Binary classification system reviewing lead conversion behavior. 
+**Context:** Week long data science challenge to properly predict conversion status by anonymized categorical data. 
+
+**Goal:** Binary classification system reviewing lead conversion behavior. 
 
 ## Contents
 
